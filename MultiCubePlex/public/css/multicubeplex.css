@@ -6,18 +6,3 @@ body {
 
 }
 
-.navbar-brand{
-      background: transparent;
-
-}
-.nav{
-      position: relative;
-}
-.navbar{
-      position: absolute;
-
-}
-.collapse{
-      margin-top: 35em;
-      margin-left: 5em;
-}

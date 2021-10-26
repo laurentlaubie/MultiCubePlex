@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/", name="_home")
      */
     public function index(GamesmodesRepository $gamesmodesRepository): Response
     {

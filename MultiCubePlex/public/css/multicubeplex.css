@@ -1,8 +1,13 @@
-main {
+main{
      
        /* background-image: url('../images/background\ MultiCubePlex.jpg'); */
+       background-color: rgb(89, 65, 34);
 
 }
 
 
+.navbarImage{
+       height: 35rem;
+    ;
+}
 

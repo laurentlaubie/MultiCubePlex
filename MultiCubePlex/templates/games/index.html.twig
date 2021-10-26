@@ -4,18 +4,26 @@
 
 {% block body %}
  
-
+ <section class="jumbotron jumbotron-fluid text-center bg-dark">
+    <div class="container">
+        <h1 class="fw-light text-center text-white ">Nos modes de jeux</h1>
+        <p class="text-center text-white">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.
+        </p>
+    </div>
+</section>
 
 <div class="d-flex flex-wrap justify-content-center w-50 m-auto ">
 {% for games in games %}
-    <div class="card text-white bg-dark m-3" style="width: 18rem;">
+    <div class="card text-white bg-dark m-4" style="width: 22rem;">
         <img class="card-img-top" src="{{ games.image }}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{ games.title }}</h5>
             <p class="card-text">{{ games.description | u.truncate(50,'...') }}</p>
-            <a href="#" class="btn btn-primary">Pour voir -> ici</a>
+                <div=class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                </div>
         </div>
-    </div>
+ 
     {% endfor %}
 </div>
 

@@ -5,18 +5,21 @@
 {% block body %}
  
 
-<div class="d-flex flex-row">
-{% for games in games %}
 
+<div class="d-flex flex-wrap justify-content-center w-50 m-auto ">
+{% for games in games %}
     <div class="card text-white bg-dark m-3" style="width: 18rem;">
         <img class="card-img-top" src="{{ games.image }}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{ games.title }}</h5>
-            <p class="card-text">{{ games.description }}</p>
+            <p class="card-text">{{ games.description | u.truncate(50,'...') }}</p>
             <a href="#" class="btn btn-primary">Pour voir -> ici</a>
         </div>
     </div>
+    {% endfor %}
 </div>
-{% endfor%}
+
+
+
 
 {% endblock %}

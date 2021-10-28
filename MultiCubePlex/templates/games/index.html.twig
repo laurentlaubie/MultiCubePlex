@@ -20,7 +20,7 @@
             <h5 class="card-title">{{ games.title }}</h5>
             <p class="card-text">{{ games.description | u.truncate(50,'...') }}</p>
                 <div=class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">En savoir plus</button>
+                    <a href="{{ path('gamesmode_show', {id:games.id}) }}" class="btn btn-sm btn-outline-secondary">En savoir plus</a>
                 </div>
         </div>
  

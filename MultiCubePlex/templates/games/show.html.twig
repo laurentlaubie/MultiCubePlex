@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Detail du mode de jeu{% endblock %}
+
+{% block body %}
+ 
+ <section class="jumbotron jumbotron-fluid text-center bg-dark">
+    <div class="container">
+        <h1 class="fw-light text-center text-white ">test</h1>
+        
+    </div>
+</section>
+
+
+
+    <div class="card text-white bg-dark m-4" style="width: 50rem;">
+        <img class="card-img-top" src="{{ game.image }}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ game.title }}</h5>
+            <p class="card-text">{{ game.description }}</p>
+                <div=class="btn-group">
+                    <a href="{{ path('gamesmode_games') }}" class="btn btn-sm btn-outline-secondary">retour à la listes des modes de jeux</a>
+                </div>
+        </div>
+ 
+  
+
+
+
+
+{% endblock %}

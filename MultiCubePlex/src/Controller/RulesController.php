@@ -14,7 +14,7 @@ class RulesController extends AbstractController
     public function index(): Response
     {
         return $this->render('rules/index.html.twig', [
-            'controller_name' => 'RulesController',
+            'Rules' => 'RulesController',
         ]);
     }
 }

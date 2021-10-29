@@ -3,18 +3,97 @@
 {% block title %}Hello RulesController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<section class="jumbotron jumbotron-fluid text-center bg-success">
+    <div class="container">
+        <h1 class="fw-light text-center text-white ">Les Regles du serveur</h1>
+        <hr class="my-4">
+        </p>
+    </div>
+</section>
+<div class="container"
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        #1 Respecter les joueurs
+        </button>
+      </h5>
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/projet/MultiCubePlex/MultiCubePlex/src/Controller/RulesController.php'|file_link(0) }}">src/Controller/RulesController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/projet/MultiCubePlex/MultiCubePlex/templates/rules/index.html.twig'|file_link(0) }}">templates/rules/index.html.twig</a></code></li>
-    </ul>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Tous les joueurs ont le droit de parler ou de s'adresser à eux de manière respectueuse. 
+        <p>=> Pourquoi avons-nous cette règle ? </p>
+       <p> Nous souhaitons que le serveur MultiCubePlex soit un endroit amusant et sûr où les joueurs peuvent communiquer et interagir entre eux de manière respectueuse. Notre environnement de chat est un bon moyen de parler à d'autres joueurs, de découvrir de nouveaux amis et de s'amuser dans les lobbies et les jeux. Nous encourageons les joueurs à coopérer et à s'affronter dans un environnement positif, mais jamais de manière irrespectueuse ou abusive. En bref : traitez les autres comme vous aimeriez être traité.</p>
+        <p>=> Qu'entendons-nous par "respecter les joueurs" ?</p>
+        <p>Respecter les joueurs signifie que les joueurs ne doivent pas créer d'expériences négatives pour les autres. Les comportements qui ne sont pas autorisés : Discrimination - commentaires négatifs liés à la couleur de la peau, au sexe, aux conditions de santé mentale ou physique, ou à d'autres qualités personnelles. Utilisation excessive d'un langage grossier Se moquer des joueurs Insulter les autres joueurs de quelque manière que ce soit Encourager la violence ou la haine envers d'autres joueurs Falsifier des informations sur d'autres joueurs partager les informations personnelles d'un autre joueur sans son consentement. Publicité sur les médias - Publier et partager des noms et des liens vers Youtube, Twitter, SnapChat, des domaines, etc. Spamming - Publication répétée de messages dans un court laps de temps. Cela peut inclure la publication de messages dans plusieurs lobbies. parler d'automutilation ou d'autres expériences profondément négatives Donner des cadeaux publicitaires (dans les lobby).</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          #2 triche et exploitation
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+       Pour offrir une expérience positive à tous les joueurs, nous interdisons tous les hacks, cheats, macros et autres comportements utilisés pour obtenir un avantage injuste. 
+       <p>=> Pourquoi avons-nous cette règle ? </p>
+        <p>Tout bug sur le serveur ou dans Minecraft qui est utilisé pour obtenir un avantage dans le jeu sur les autres joueurs est considéré comme un jeu déloyal et n'est pas autorisé. Ceci afin de s'assurer que les bugs qui surviennent ne sont pas utilisés de manière abusive pour obtenir un avantage déloyal dans les jeux. Cela signifie que, où qu'ils se trouvent sur le serveur, quelle qu'en soit la raison, les modifications de jeu, les tricheries ou les exploits qui donnent un avantage déloyal au jeu sont strictement interdits. Lien vers cette section de règles Qu'est-ce qu'un avantage déloyal ? Un avantage déloyal signifie que les joueurs ne doivent pas être interrompus pendant les parties pour l'une des raisons ci-dessous : Encourager la tricherie Exploitation de Autoclick / Macros Cross teaming Grief d'équipe Mods non autorisés Augmentation des statistiques Augmenter l'expérience par des méthodes illégitimes Lien vers cette section de règles Vous avez trouvé un exploit/bogue ? Si vous trouvez un bug, veuillez le signaler ici : Rapports de bug. Lien vers cette section du règlement.</p>
+        <p>=> Quelles sont les modifications autorisées ?</p>
+        <p>Les modifications autorisées sur le réseau MultiCubePlex sont des mods cosmétiques qui affichent des quantités limitées d'informations supplémentaires ou des mods qui ne peuvent pas donner un avantage injuste dans le jeu. </p>
+        <p>=> Vous avez trouvé un bug ?</p>
+        <p>Si vous trouvez un bug, veuillez le signaler dans le discord</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          #3 Contenu créatif et artistique raisonnable
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Nous encourageons les joueurs à faire preuve de créativité en matière d'art et de dessins, de manière à ne pas nuire à l'expérience des autres. Cela inclut tout le contenu tel que les dessins, les noms d'objets, les skins et les capes, qui sont créés par les joueurs.
+        <p>=> Pourquoi avons-nous cette règle ?</p>
+        <p>Cette règle a été mise en place afin d'offrir une expérience de jeu positive à tous les joueurs et de créer un environnement où les concepts et les thèmes inappropriés ne sont pas partagés publiquement. Tous les joueurs ont le droit de jouer dans un environnement qui convient à un large éventail d'âges.</p>
+        <p>=> Que signifie "contenu créatif et artistique raisonnable" ?</p>
+        <p>Un contenu créatif et artistique raisonnable signifie que les joueurs peuvent s'exprimer dans les parties interactives du serveur. Cependant, les joueurs ont également le droit de ne pas être exposés à certains contenus. Veuillez consulter la liste ci-dessous pour connaître les contenus qui doivent être signalés au personnel : Dessins inappropriés - par exemple, images racistes ou sexuelles. Noms d'objets inappropriés - par exemple, des insultes raciales ou des expressions sexuelles. Noms d'animaux inappropriés - par exemple, insultes raciales ou expressions sexuelles. Utilisations inappropriées d'objets - par exemple, insultes raciales ou phrases sexuelles sur des chapeaux, des panneaux, etc. Skins et capes inappropriés - par exemple, images racistes ou sexuelles. Noms d'utilisateur inappropriés : racistes, sexuels ou usurpant l'identité d'autres utilisateurs.</p>
+        <p>=> Que faire si vous pensez que quelqu'un n'a pas respecté cette règle ? </p>
+        <p>Si vous pensez que quelqu'un a enfreint cette règle, veuillez nous le faire savoir en signalant l'utilisateur.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          #4 Sécurité des joueurs et des comptes
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        Les joueurs ont le droit de jouer dans un environnement protégé contre le phishing, l'escroquerie et la vente de comptes.
+        <p>=> Pourquoi avons-nous cette règle ?</p>
+        <p>En tant que serveur Minecraft, nous n'avons aucun contrôle sur votre compte Minecraft. Cependant, la sécurité des joueurs est très importante pour nous, c'est pourquoi, dans la mesure du possible, nous prenons des mesures pour aider à protéger nos joueurs contre la perte de leur compte ou contre toute autre forme d'escroquerie. Veuillez ne PAS partager les détails de votre compte Minecraft avec qui que ce soit. Vous êtes responsable de ce qui arrive à votre compte, alors assurez-vous que vos mots de passe sont sécurisés et que vous ne les donnez jamais à personne.</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+</div>
+
+
 {% endblock %}

@@ -4,13 +4,22 @@
 
 {% block body %}
 
-      
+<section class="jumbotron jumbotron-fluid text-center bg-success">
+    <div class="container">
+        <h1 class="fw-light text-center text-white ">Pourquoi MultiCubePlex Serveur</h1>
+        <hr class="my-4">
+        <p class="text-center text-white">Minecraft est un jeu de type bac à sable. Le but du jeu étant de détruire des différents blocs pour les recombiner et en créer d'autres.
+        </p>
+        <p class="text-white">Tout ceci vous ouvre des possibilités quasi-infinies. De fait les joueurs pourront créer toutes sortes de structures, de décors. Allant de la reproduction d'image "pixel-art", jusqu'à la création de réseaux complexes vous permettant de créer des machines, des montagne russes ou encore des imprimantes pour les plus acharnés ! Les plus compétitifs d’entre vous pourront même s'affronter entres eux en mode Player versus Player ou aux travers d'épreuves comme des mini-jeux de sports.</p>
+    </div>
+</section>
+
 <div class="title">
-  <h1 class="text-center text-warning mt-2 ">Dernieres images => Modes de jeux</h1>
+  <h1 class="text-center text-warning mt-2 ">Les dernieres images du serveur</h1>
 </div>
       
             {# <image src="{{ modes.image }}" width="40%" > #}
-<div class="container">
+<div class="container mb-4">
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -30,12 +39,13 @@
         {% if isFirst == true %}
         <div class="carousel-inner">
           <div class="carousel-item active">
-        {% else %}
-        <div class="carousel-item">
+          {% else %}
+          <div class="carousel-item">
         {% endif %}
           <img class="d-block w-100 rounded" src="{{ asset(modes.image) }}" alt="First slide">
-        </div>
+          </div>
         {% set isFirst = false %}
+        
       {% endfor %}
 
     <!-- affiche le < avec previous et next du carrousel -->
@@ -47,19 +57,27 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       {# <span class="sr-only">Suivant</span> #}
     </a>
+    </div>
   </div>
 </div>
 
 
-<div class="card text-white bg-dark mb-3 mt-5 mb-5" style="width: 38rem;">
-  <div class="card-body">
-    <h5 class="card-title text-center">Explications du serveur</h5>
-    <h6 class="card-subtitle mb-2 text-muted text-center">MulticubePlex Serveur</h6>
-    <p class="card-text">Salut, Nous te présentons MultiCubePlex un tout nouveau serveur multijoueur avec plein de mode de jeu, de grade et même de cosmétique. Viens te faire de nouveaux amis. Tu attends quoi pour nous rejoindre, tout le monde t'attend avec impatience sur ce serveur</p>
-    <a href="#" class="card-link"> Pour jouer c'est ici</a>
-    <a href="#" class="card-link">Qui sommes-nous</a>
-  </div>
-</div>
+  <section class="jumbotron jumbotron-fluid text-center bg-success ">
+    <div class="container">
+      <div class="card text-white bg-dark mb-3 mt-5 mb-5" style="width: 38rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center">Explications du serveur</h5>
+          <p class="card-text">Salut, Nous te présentons MultiCubePlex un tout nouveau serveur multijoueur avec plein de mode de jeu, de grade et même de cosmétique. Viens te faire de nouveaux amis. Tu attends quoi pour nous rejoindre, tout le monde t'attend avec impatience sur ce serveur</p>
+          <a href="#" class="card-link"> Pour jouer c'est ici</a>
+          <a href="#" class="card-link">Qui sommes-nous</a>
+       </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
     
 

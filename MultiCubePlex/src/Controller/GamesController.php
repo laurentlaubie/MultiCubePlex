@@ -32,7 +32,7 @@ class GamesController extends AbstractController
 
 
     /**
-     * Page affichant le detail d'un modes de jeu
+     * Page affichant le detail d'un mode de jeu
      * 
      * URL : /games/{id}
      * Nom de la route : gamesmode_show

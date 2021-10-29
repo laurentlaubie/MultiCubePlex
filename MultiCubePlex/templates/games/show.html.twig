@@ -4,16 +4,17 @@
 
 {% block body %}
  
- <section class="jumbotron jumbotron-fluid text-center bg-dark">
+ <section class="jumbotron jumbotron-fluid text-center bg-success">
     <div class="container">
-        <h1 class="fw-light text-center text-white ">test</h1>
+        <h1 class="fw-light text-center text-white ">{{ game.title }}</h1>
+        <hr class="my-4">
+        <p class="text-center text-white">Ici vous trouverez tous les details d'un mode. Des aides, des informations et les dernieres images tirées du jeux.
+        </p>
         
     </div>
 </section>
 
-
-
-    <div class="card text-white bg-dark m-4" style="width: 50rem;">
+    <div class="card text-white bg-dark mx-auto mb-2" style="width: 50rem;">
         <img class="card-img-top" src="{{ game.image }}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{ game.title }}</h5>

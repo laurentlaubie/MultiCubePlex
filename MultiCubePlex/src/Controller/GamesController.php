@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
     /**
-     * @Route("/games", name="gamesmode_")
+     * @Route("/modedejeux", name="gamesmode_")
      */
 class GamesController extends AbstractController
 {
@@ -34,7 +34,7 @@ class GamesController extends AbstractController
     /**
      * Page affichant le detail d'un mode de jeu
      * 
-     * URL : /games/{id}
+     * URL : /modedejeu/{id}
      * Nom de la route : gamesmode_show
      * 
      * @Route("/{id}", name="show")

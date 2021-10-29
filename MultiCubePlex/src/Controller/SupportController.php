@@ -14,7 +14,7 @@ class SupportController extends AbstractController
     public function index(): Response
     {
         return $this->render('support/index.html.twig', [
-            'controller_name' => 'SupportController',
+            'support' => 'SupportController',
         ]);
     }
 }
